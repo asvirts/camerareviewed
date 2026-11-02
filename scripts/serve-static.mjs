@@ -8,7 +8,7 @@ const port = Number(process.env.PORT || 4321);
 
 const headers = {
   "Content-Security-Policy":
-    "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; upgrade-insecure-requests",
+    "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; upgrade-insecure-requests",
   "X-Content-Type-Options": "nosniff",
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "X-Frame-Options": "DENY",
@@ -59,16 +59,21 @@ const server = createServer((req, res) => {
   }
   const file = fileFor(pathname);
   if (!file) {
-    res.writeHead(404, { ...headers, "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+    res.writeHead(404, {
+      ...headers,
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store",
+    });
     createReadStream(path.join(root, "404.html")).pipe(res);
     return;
   }
   const ext = path.extname(file);
-  const cache = ext === ".html" || ext === ".xml" || ext === ".txt"
-    ? "public, max-age=0, must-revalidate"
-    : file.includes(`${path.sep}assets${path.sep}`)
-      ? "public, max-age=31536000, immutable"
-      : "public, max-age=604800";
+  const cache =
+    ext === ".html" || ext === ".xml" || ext === ".txt"
+      ? "public, max-age=0, must-revalidate"
+      : file.includes(`${path.sep}assets${path.sep}`)
+        ? "public, max-age=31536000, immutable"
+        : "public, max-age=604800";
   const encoding = req.headers["accept-encoding"] || "";
   const compressible = [".html", ".css", ".js", ".svg", ".xml", ".txt"].includes(ext);
   res.setHeader("Content-Type", types[ext] || "application/octet-stream");

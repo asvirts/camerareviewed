@@ -2,7 +2,7 @@ import { defineConfig } from "void/config";
 import { redirectRules } from "./src/lib/feeds";
 
 const securityHeaders = [
-  "Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; upgrade-insecure-requests",
+  "Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; upgrade-insecure-requests",
   "X-Content-Type-Options: nosniff",
   "Referrer-Policy: strict-origin-when-cross-origin",
   "X-Frame-Options: DENY",

@@ -6,23 +6,38 @@ import type { Props } from "./index.server";
 
 export default function AboutPage({ seo }: Props) {
   return (
-    <>
+    <div className="desk-page">
       <Breadcrumbs items={seo.crumbs} />
-      <h1>{seo.h1}</h1>
-      <p className="byline">
-        Updated <time dateTime={SITE_UPDATED}>{formatDate(SITE_UPDATED)}</time>
-      </p>
+      <header className="desk-header">
+        <div className="category-kicker-row">
+          <p className="kicker kicker-pill">The Desk</p>
+          <span className="article-stat-pill">
+            UPDATED <time dateTime={SITE_UPDATED}>{formatDate(SITE_UPDATED)}</time>
+          </span>
+        </div>
+        <h1>{seo.h1}</h1>
+        <nav className="desk-subnav" aria-label="Desk pages">
+          <a href="/about/" aria-current="page">
+            About
+          </a>
+          <a href="/editorial-policy/">How we choose</a>
+          <a href="/author/andrew-virts/">Andrew Virts</a>
+          <a href="/affiliate-disclosure/">Affiliate disclosure</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </header>
       <HeroImage
         id="about"
         alt="Illustration of a desk lamp and a notebook. Not a portrait."
         priority
       />
-      <div className="prose">
+      <div className="prose desk-prose">
         <p>
           CameraReviewed is an independent site about home security cameras and video doorbells.
           Andrew Virts owns it. The bias is practical: a lot of people want to see the front door
           without adding another monthly bill, and the product pages that rank for that question are
-          often the same brands’ own stores.
+          often the same brands&rsquo; own stores.
         </p>
         <p>
           This first version is a research desk, not a test lab. Guides summarize public
@@ -35,7 +50,10 @@ export default function AboutPage({ seo }: Props) {
           <li>
             We do not publish star ratings, lab charts, or claims that a product was tried here.
           </li>
-          <li>We do not sell installer appointments, and we do not write “near me” lead pages.</li>
+          <li>
+            We do not sell installer appointments, and we do not write &ldquo;near me&rdquo; lead
+            pages.
+          </li>
           <li>We do not teach people how to hide a camera from someone who shares the house.</li>
         </ul>
         <h2>How the pages fit together</h2>
@@ -51,6 +69,6 @@ export default function AboutPage({ seo }: Props) {
           advice. Corrections go to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
         </p>
       </div>
-    </>
+    </div>
   );
 }

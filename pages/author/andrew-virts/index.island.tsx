@@ -6,22 +6,37 @@ import type { Props } from "./index.server";
 
 export default function AuthorPage({ seo }: Props) {
   return (
-    <>
+    <div className="desk-page">
       <Breadcrumbs items={seo.crumbs} />
-      <p className="kicker">Publisher</p>
-      <h1>{seo.h1}</h1>
-      <p className="byline">
-        Bio updated <time dateTime={SITE_UPDATED}>{formatDate(SITE_UPDATED)}</time>
-      </p>
+      <header className="desk-header">
+        <div className="category-kicker-row">
+          <p className="kicker kicker-pill">Publisher</p>
+          <span className="article-stat-pill">
+            BIO UPDATED <time dateTime={SITE_UPDATED}>{formatDate(SITE_UPDATED)}</time>
+          </span>
+        </div>
+        <h1>{seo.h1}</h1>
+        <nav className="desk-subnav" aria-label="Desk pages">
+          <a href="/about/">About</a>
+          <a href="/editorial-policy/">How we choose</a>
+          <a href="/author/andrew-virts/" aria-current="page">
+            Andrew Virts
+          </a>
+          <a href="/affiliate-disclosure/">Affiliate disclosure</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </header>
       <HeroImage
         id="author"
         alt="Illustration of a nameplate and a pencil. Not a photograph of Andrew Virts."
         priority
       />
-      <div className="prose">
+      <div className="prose desk-prose">
         <p className="todo">
-          Placeholder bio. Andrew: replace this page with your own words. Do not leave a fictional
-          résumé here. The file is pages/author/andrew-virts/index.island.tsx.
+          <strong>Editorial placeholder:</strong> Placeholder bio. Andrew: replace this page with
+          your own words. Do not leave a fictional r&eacute;sum&eacute; here. The file is
+          pages/author/andrew-virts/index.island.tsx.
         </p>
         <p>
           Andrew Virts publishes CameraReviewed. This biography does not list years as an installer,
@@ -44,11 +59,12 @@ export default function AuthorPage({ seo }: Props) {
         <h2>How to reach him</h2>
         <p>
           Email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Use the subject
-          “correction” and include the page URL. The <a href="/contact/">contact page</a> explains
-          what to send. The <a href="/editorial-policy/">editorial policy</a> explains what the site
-          will and will not claim.
+          &ldquo;correction&rdquo; and include the page URL. The{" "}
+          <a href="/contact/">contact page</a> explains what to send. The{" "}
+          <a href="/editorial-policy/">editorial policy</a> explains what the site will and will not
+          claim.
         </p>
       </div>
-    </>
+    </div>
   );
 }

@@ -8,10 +8,10 @@ Last verified on this machine, after `vp test` and `vp build` both exited 0:
 - `vp build` prerendered every page to `dist/client/*.html` (slashless filename, trailing-slash canonical in the HTML).
 - Lighthouse 12.8.2, mobile, headless Chrome, against `scripts/serve-static.mjs` on the prerendered files (Brotli, security headers):
 
-| Page | Performance | Accessibility | Best Practices | SEO | LCP | CLS | TBT |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `/` | 100 | 100 | 100 | 100 | 0.9s | 0 | 0ms |
-| `/security-cameras-without-subscription/` | 100 | 100 | 100 | 100 | 0.9s | 0 | 0ms |
+| Page                                      | Performance | Accessibility | Best Practices | SEO | LCP  | CLS | TBT |
+| ----------------------------------------- | ----------- | ------------- | -------------- | --- | ---- | --- | --- |
+| `/`                                       | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
+| `/security-cameras-without-subscription/` | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
 
 INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/islands-client-*.js` is 0 bytes and is not referenced). CSS is one ~6.7KB file. Those scores are not yet copied into `SEO_CHECKLIST.md` because that file does not exist.
 

@@ -5,17 +5,32 @@ import type { Props } from "./index.server";
 
 export default function PrivacyPage({ seo }: Props) {
   return (
-    <>
+    <div className="desk-page">
       <Breadcrumbs items={seo.crumbs} />
-      <h1>{seo.h1}</h1>
-      <p className="byline">
-        Updated <time dateTime={SITE_UPDATED}>{formatDate(SITE_UPDATED)}</time>
-      </p>
-      <div className="prose">
+      <header className="desk-header">
+        <div className="category-kicker-row">
+          <p className="kicker kicker-pill">Data &amp; Cookies</p>
+          <span className="article-stat-pill">
+            UPDATED <time dateTime={SITE_UPDATED}>{formatDate(SITE_UPDATED)}</time>
+          </span>
+        </div>
+        <h1>{seo.h1}</h1>
+        <nav className="desk-subnav" aria-label="Desk pages">
+          <a href="/about/">About</a>
+          <a href="/editorial-policy/">How we choose</a>
+          <a href="/author/andrew-virts/">Andrew Virts</a>
+          <a href="/affiliate-disclosure/">Affiliate disclosure</a>
+          <a href="/privacy/" aria-current="page">
+            Privacy
+          </a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </header>
+      <div className="prose desk-prose">
         <p>
           This policy describes the first version of camerareviewed.com. It is a plain-language
-          notice, not a lawyer’s opinion. Andrew should have it reviewed before the site takes real
-          traffic.
+          notice, not a lawyer&rsquo;s opinion. Andrew should have it reviewed before the site takes
+          real traffic.
         </p>
         <h2>What this site is</h2>
         <p>
@@ -54,6 +69,6 @@ export default function PrivacyPage({ seo }: Props) {
           The site is written for adults buying household equipment. It is not directed at children.
         </p>
       </div>
-    </>
+    </div>
   );
 }

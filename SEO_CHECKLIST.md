@@ -7,10 +7,10 @@ Each line is an acceptance criterion and where this repo meets it. Re-check afte
 - **Static HTML for every page.** `void.config.ts` sets `output: 'static'`. `vp build` writes one HTML file per route under `dist/client/` (`about.html` for `/about/`). View source contains the article text. Island pages ship no component JavaScript; `dist/client/assets/islands-client-*.js` is 0 bytes and the HTML does not load it.
 - **Core Web Vitals.** Mobile Lighthouse 12.8.2 on 2 Nov 2026, local static server with Brotli:
 
-  | URL | Performance | Accessibility | Best Practices | SEO | LCP | CLS | TBT |
-  | --- | --- | --- | --- | --- | --- | --- | --- |
-  | `/` | 100 | 100 | 100 | 100 | 0.9s | 0 | 0ms |
-  | `/security-cameras-without-subscription/` | 100 | 100 | 100 | 100 | 0.9s | 0 | 0ms |
+  | URL                                       | Performance | Accessibility | Best Practices | SEO | LCP  | CLS | TBT |
+  | ----------------------------------------- | ----------- | ------------- | -------------- | --- | ---- | --- | --- |
+  | `/`                                       | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
+  | `/security-cameras-without-subscription/` | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
 
   Lab INP is not reported because the trace does not click. There is no hydration work. LCP is under 2.5s and CLS is under 0.1.
 

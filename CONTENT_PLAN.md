@@ -8,13 +8,13 @@ Five guides are already published. They are the pillars. The backlog favors buye
 
 ## Published
 
-| Guide | Primary keyword | Role |
-| --- | --- | --- |
-| `/security-cameras-without-subscription/` | security cameras without a subscription | Pillar. Planner volume 5,000, competition High (100). |
-| `/outdoor-security-cameras-without-subscription/` | outdoor security cameras without a subscription | Outdoor cluster. Same head-term pattern, High. |
-| `/security-cameras-without-wifi/` | security cameras that work without Wi-Fi | Cable vs cellular. Head term “security cameras without wifi” is 5,000, High. |
-| `/ring-subscription/` | do you need a Ring subscription | Plan explainer. Nearby low-competition cousins are listed below. |
-| `/install-ring-video-doorbell/` | how to install a wired Ring video doorbell | Wired power, not Wi-Fi. “installing ring wired doorbell” is 500, Low, index 16. |
+| Guide                                             | Primary keyword                                 | Role                                                                            |
+| ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------- |
+| `/security-cameras-without-subscription/`         | security cameras without a subscription         | Pillar. Planner volume 5,000, competition High (100).                           |
+| `/outdoor-security-cameras-without-subscription/` | outdoor security cameras without a subscription | Outdoor cluster. Same head-term pattern, High.                                  |
+| `/security-cameras-without-wifi/`                 | security cameras that work without Wi-Fi        | Cable vs cellular. Head term “security cameras without wifi” is 5,000, High.    |
+| `/ring-subscription/`                             | do you need a Ring subscription                 | Plan explainer. Nearby low-competition cousins are listed below.                |
+| `/install-ring-video-doorbell/`                   | how to install a wired Ring video doorbell      | Wired power, not Wi-Fi. “installing ring wired doorbell” is 500, Low, index 16. |
 
 ## Backlog
 
