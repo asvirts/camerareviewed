@@ -48,40 +48,19 @@ INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/i
 - Do not claim hands-on tests. Product cards stay TODO until Andrew verifies the model and fills `asin`.
 - Do not deploy. Andrew deploys from his own Cloudflare account.
 
+## Docs now in the repo
+
+- `README.md` — setup, `vp` commands, adding an article, `AMAZON_TAG`, and the Cloudflare deploy plus Search Console / Bing / Web Analytics steps.
+- `CONTENT_PLAN.md` — the 20-item backlog from the Keyword Planner export.
+- `SEO_CHECKLIST.md` — each acceptance criterion, the Lighthouse table, and the 307-vs-301 warning.
+
 ## Left
 
-1. Replace the stub `README.md`. It is still only the title. It needs: install `vp` (`curl -fsSL https://vite.plus | bash`), `vp install`, `vp dev`, `vp check`, `vp test`, `vp build`, how to add an article (frontmatter shape in `content/articles/*.md`, then the build picks it up via `getPrerenderPaths`), `AMAZON_TAG` in `.env` or the shell before `vp build` / `void deploy` (it is baked into HTML; `void secret put` does not update static links), and Andrew’s deploy:
-   - `void connect --platform cloudflare` (init was run with `--deploy none`, so nothing is linked yet)
-   - `void deploy --platform cloudflare` (browser login, account pick). Later deploys are `void deploy`.
-   - Zone for `camerareviewed.com` on that same Cloudflare account (nameservers at the registrar if the zone is new).
-   - `void domain add camerareviewed.com` and `void domain add www.camerareviewed.com`. Direct Cloudflare adds a custom-domain route; Cloudflare creates DNS and the certificate when the zone is on the account. `void domain status camerareviewed.com` reports the route, not remote certificate state (that is the dashboard).
-   - `www` → apex 301 is already in `void.config.ts`. Add the www hostname before relying on it.
-   - Post-launch: Google Search Console and Bing Webmaster Tools HTML meta tokens via `GOOGLE_SITE_VERIFICATION` and `BING_SITE_VERIFICATION`, submit `https://camerareviewed.com/sitemap.xml`. Cloudflare Web Analytics: set `CF_WEB_ANALYTICS_TOKEN` and extend `script-src` / `connect-src` in `void.config.ts` for `https://static.cloudflareinsights.com` and `https://cloudflareinsights.com`. Leave the token empty until then; it is currently off so Lighthouse stays clean.
-2. Add `CONTENT_PLAN.md` with about 20 future articles from `/home/ubuntu/.cursor/projects/workspace/uploads/run1_e191.csv` (UTF-16 TSV, Keyword Planner, Oct 2025–Sep 2026). Skip “near me” and installer terms. Favor buyer intent and lower competition. The five live guides are the pillars. Strong backlog already pulled from that file:
-   - best video doorbell without monthly fee (50, Low, idx 0)
-   - best wireless security camera system without monthly fee (50, Low, idx 0)
-   - video doorbell no subscription fee / subscriptionless video doorbell (50, Low, idx 0)
-   - Arlo local recording / Arlo without a subscription (50–500, Low to Medium)
-   - Blink video recording without a subscription, Blink Mini, Blink local storage (50–500, Low)
-   - Nest camera recording without a subscription (50, Low)
-   - record Ring camera without a subscription; Ring doorbell storage without a subscription; Ring camera local storage (500, Low, idx 11)
-   - Wyze Cam without a subscription (50, Low)
-   - best DIY home security system no monthly fee (50, Low, idx 16)
-   - smart security camera no subscription (50, Low, idx 29)
-   - camera doorbell no monthly fee (50, Medium, idx 38)
-   - SimpliSafe camera without a subscription (50, Medium)
-   - best wireless security camera outdoor without subscription (50, Medium, idx 50)
-   - Ring doorbell monthly cost (5000, Low, idx 29)
-   - Ring wired doorbell voltage (50, Low, idx 3) and best height for a Ring doorbell (50, Low, idx 4)
-   - installing a Ring floodlight cam (500, Low, idx 23)
-   - wifi camera no cloud (50, Low, idx 29)
-   - eufy local storage (500, competition indexed 74; useful cluster page, not a low-competition win)
-   - PoE / NVR kit page (head terms are high competition; write it as a deep guide off the no-Wi-Fi article)
-   - wired doorbell camera (5000, Medium, idx 48)
-3. Add `SEO_CHECKLIST.md` that maps each acceptance criterion to the file that implements it, and paste the Lighthouse table above. Call out the 307-vs-301 trailing-slash compromise so nobody “fixes” it by adding `public/_redirects`.
-4. Indoor hub has intro copy and no article yet. That is intentional. The first indoor roundup is backlog, not a hole in the build.
-5. `vp check` (fmt + oxlint) passed earlier in this session. Re-run it after the next edit. Typecheck is `pnpm exec tsc --noEmit` (passes). `vp check` does not typecheck unless `lint.options.typeCheck` is turned on.
-6. Screenshots were taken for a PR that Andrew then cancelled. They are not in git. Do not block on them.
+1. Andrew deploys from his own machine. Steps are in the README. Do not deploy from an agent. Init used `--deploy none`, so the first commands are `void connect --platform cloudflare` and `void deploy --platform cloudflare`, then `void domain add` for `camerareviewed.com` and `www.camerareviewed.com`.
+2. After DNS works: Search Console and Bing tokens, submit `https://camerareviewed.com/sitemap.xml`, then Cloudflare Web Analytics (and the CSP edit in the README). The mailbox in `CONTACT_EMAIL` and the author bio are still placeholders.
+3. Product cards stay TODO until Andrew verifies models and ASINs. The next articles are the 20 items in `CONTENT_PLAN.md`. Indoor has a hub and no article yet; that is intentional.
+4. `vp check` passed earlier in the session, before these docs. Re-run it after the next code edit. `pnpm exec tsc --noEmit` passes. `vp check` does not typecheck unless `lint.options.typeCheck` is enabled.
+5. No pull request. Keep pushing to `main`.
 
 ## How to run
 
