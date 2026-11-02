@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>CameraReviewed</title>
+    <link>https://camerareviewed.com/</link>
+    <description>Home security camera and video doorbell guides, with a bias toward recording without a monthly fee.</description>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 02 Nov 2026 16:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Security cameras that work without Wi-Fi</title>
+      <link>https://camerareviewed.com/security-cameras-without-wifi/</link>
+      <guid isPermaLink="true">https://camerareviewed.com/security-cameras-without-wifi/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Which security cameras record without Wi-Fi, how PoE and coax differ from cellular, and why a data plan is still a monthly bill.</description>
+    </item>
+    <item>
+      <title>Security cameras without a subscription</title>
+      <link>https://camerareviewed.com/security-cameras-without-subscription/</link>
+      <guid isPermaLink="true">https://camerareviewed.com/security-cameras-without-subscription/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>How to buy a home security camera that stores footage without a monthly cloud plan, and which spec lines to verify before you pay.</description>
+    </item>
+    <item>
+      <title>Do you need a Ring subscription?</title>
+      <link>https://camerareviewed.com/ring-subscription/</link>
+      <guid isPermaLink="true">https://camerareviewed.com/ring-subscription/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>What Ring says you can do without a Protect plan, what video history costs, and the plan names and prices listed on ring.com when this draft was written.</description>
+    </item>
+    <item>
+      <title>Outdoor security cameras without a subscription</title>
+      <link>https://camerareviewed.com/outdoor-security-cameras-without-subscription/</link>
+      <guid isPermaLink="true">https://camerareviewed.com/outdoor-security-cameras-without-subscription/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>How to choose an outdoor security camera that records locally, with weather, power, night video, and theft of the camera included.</description>
+    </item>
+    <item>
+      <title>How to install a wired Ring video doorbell</title>
+      <link>https://camerareviewed.com/install-ring-video-doorbell/</link>
+      <guid isPermaLink="true">https://camerareviewed.com/install-ring-video-doorbell/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Ring’s hardwiring rules for a wired video doorbell: transformer ranges, chime limits, and when to stop and hire an electrician.</description>
+    </item>
+  </channel>
+</rss>
