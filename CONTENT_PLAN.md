@@ -4,23 +4,24 @@ Source: Google Keyword Planner export `run1.csv` (October 2025–September 2026)
 
 Skip local-service queries (`near me`, installers, “who installs”, repair companies). The live site does not sell installation leads.
 
-Five guides are already published. They are the pillars. The backlog favors buyer intent and lower competition. High-competition head terms are included only when they are the natural next page in a cluster, and the note says so.
+Six guides are published. The first five are the pillars. The backlog favors buyer intent and lower competition. High-competition head terms are included only when they are the natural next page in a cluster, and the note says so.
 
 ## Published
 
-| Guide                                             | Primary keyword                                 | Role                                                                            |
-| ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------- |
-| `/security-cameras-without-subscription/`         | security cameras without a subscription         | Pillar. Planner volume 5,000, competition High (100).                           |
-| `/outdoor-security-cameras-without-subscription/` | outdoor security cameras without a subscription | Outdoor cluster. Same head-term pattern, High.                                  |
-| `/security-cameras-without-wifi/`                 | security cameras that work without Wi-Fi        | Cable vs cellular. Head term “security cameras without wifi” is 5,000, High.    |
-| `/ring-subscription/`                             | do you need a Ring subscription                 | Plan explainer. Nearby low-competition cousins are listed below.                |
-| `/install-ring-video-doorbell/`                   | how to install a wired Ring video doorbell      | Wired power, not Wi-Fi. “installing ring wired doorbell” is 500, Low, index 16. |
+| Guide                                             | Primary keyword                                 | Role                                                                                                                                                            |
+| ------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/security-cameras-without-subscription/`         | security cameras without a subscription         | Pillar. Planner volume 5,000, competition High (100).                                                                                                           |
+| `/outdoor-security-cameras-without-subscription/` | outdoor security cameras without a subscription | Outdoor cluster. Same head-term pattern, High.                                                                                                                  |
+| `/security-cameras-without-wifi/`                 | security cameras that work without Wi-Fi        | Cable vs cellular. Head term “security cameras without wifi” is 5,000, High.                                                                                    |
+| `/ring-subscription/`                             | do you need a Ring subscription                 | Plan explainer. Nearby low-competition cousins are listed below.                                                                                                |
+| `/install-ring-video-doorbell/`                   | how to install a wired Ring video doorbell      | Wired power, not Wi-Fi. “installing ring wired doorbell” is 500, Low, index 16.                                                                                 |
+| `/best-video-doorbell-without-monthly-fee/`       | best video doorbell without monthly fee         | Commercial investigation. Format: listicle/roundup. Planner 50, Low, index 0. Published 2026-11-03 from buyer-roundup SERPs. Compares where the clip is stored. |
 
 ## Backlog
 
-Write these as the same kind of draft: cite the manufacturer page, no hands-on scores, TODO on any product card.
+Write these as the same kind of draft: cite the manufacturer page, no hands-on scores, TODO on any product card. The next unpublished article is item 2. Item 1 is live. Item 10 is folded into that guide.
 
-1. **Best video doorbell without a monthly fee.** Keyword `best video doorbell without monthly fee`, 50, Low, index 0. Also `video doorbell no subscription fee` and `subscriptionless video doorbell` (both 50, Low, 0). Slug idea: `/video-doorbell-without-monthly-fee/`. Cluster: doorbells + no subscription.
+1. **Best video doorbell without a monthly fee.** Published as `/best-video-doorbell-without-monthly-fee/`. Do not write it again. The live slug includes `best` so the primary keyword is in the URL. Secondary phrases used on the page: `video doorbell no subscription fee`, `subscriptionless video doorbell`, `camera doorbell no monthly fee`, `doorbell camera without a subscription`, `video doorbell local storage`, and `do video doorbells need a subscription`.
 2. **Wireless security camera system without a monthly fee.** `best wireless security camera system without monthly fee`, 50, Low, 0. Slug: `/wireless-security-camera-system-without-monthly-fee/`.
 3. **Arlo without a subscription.** Several Low, index-0 queries at volume 50 (`arlo local recording without subscription`, `arlo pro 4 without subscription`, `arlo video storage without subscription`) plus `arlo without subscription` at 500, Medium, index 43. One page can cover the family. Slug: `/arlo-without-subscription/`.
 4. **Blink recording without a subscription.** `blink video recording without subscription` and `blink mini record without subscription` (50, Low, 0). `blink local storage without subscription` is 500, Low, index 28. `blink camera without subscription` is 500 but High. Slug: `/blink-without-subscription/`.
@@ -29,7 +30,7 @@ Write these as the same kind of draft: cite the manufacturer page, no hands-on s
 7. **Wyze without Cam Plus.** `wyze cam v3 without subscription` and `wyze without subscription` (50, Low). Slug: `/wyze-without-subscription/`.
 8. **DIY home security with no monthly fee.** `best diy home security system no monthly fee`, 50, Low, index 16. Slug: `/diy-home-security-no-monthly-fee/`. Keep it about equipment the owner installs, not a contractor marketplace.
 9. **Smart security camera, no subscription.** `smart security camera no subscription`, 50, Low, index 29. Slug: `/smart-security-camera-no-subscription/`. Define “smart” as detection and alerts, and say which of those are often the paid line.
-10. **Doorbell with no monthly fee (non-“best” variant).** `camera doorbell no monthly fee`, 50, Medium, index 38. Use this as a section or a short companion only if the first doorbell article does not already cover the phrasing. Do not publish two near-duplicate URLs.
+10. **Doorbell with no monthly fee (non-“best” variant).** Skipped as its own URL on 2026-11-03. `camera doorbell no monthly fee` (50, Medium, index 38) is the same buyer question as the published doorbell roundup, and that page already uses the phrase as a section. A second URL would be a near-duplicate. Do not publish one.
 11. **SimpliSafe cameras without a subscription.** `simplisafe camera recording without subscription`, 50, Medium, index 40. Slug: `/simplisafe-camera-without-subscription/`.
 12. **Wireless outdoor camera without a subscription.** `best wireless security camera outdoor without subscription`, 50, Medium, index 50. Slug: `/wireless-outdoor-camera-without-subscription/`. Differ from the live outdoor guide by staying on battery/Wi-Fi, not PoE.
 13. **What Ring costs per month.** `ring doorbell monthly cost`, 5,000, Low, index 29. Also `ring doorbell cost per month` (500, Medium). Slug: `/ring-doorbell-monthly-cost/`. Update the dated prices; do not leave the November 2026 figures as if they were permanent.
@@ -43,8 +44,8 @@ Write these as the same kind of draft: cite the manufacturer page, no hands-on s
 
 ## Clusters
 
-- **No monthly fee:** pillars 1 and the doorbell, wireless-system, Arlo, Blink, Nest, Wyze, SimpliSafe, DIY, and eufy pages.
-- **Doorbells:** live Ring plan and wired install, plus doorbells without a fee, monthly cost, voltage, height, floodlight, and the general wired-doorbell page.
+- **No monthly fee:** pillars 1, the published doorbell roundup, and the wireless-system, Arlo, Blink, Nest, Wyze, SimpliSafe, DIY, and eufy pages.
+- **Doorbells:** live Ring plan, wired install, and the no-fee roundup, plus monthly cost, voltage, height, floodlight, and the general wired-doorbell page. The non-“best” doorbell phrase is a section of the roundup, not a future URL.
 - **No Wi-Fi / local recorder:** live no-Wi-Fi guide, PoE/NVR, and the “no cloud” page (that last one still uses Wi-Fi).
 - **Outdoor:** live outdoor guide plus the wireless-outdoor variant. Indoor stays a hub until there is a real indoor draft.
 

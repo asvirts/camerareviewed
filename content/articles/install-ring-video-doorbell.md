@@ -5,7 +5,7 @@ title: Install a Wired Ring Video Doorbell
 description: "Ring’s hardwiring rules for a wired video doorbell: transformer ranges, chime limits, and when to stop and hire an electrician."
 summary: "Ring publishes the voltage ranges, the chime exceptions, and the shock warning. This draft organizes those rules in install order and does not claim we mounted a doorbell."
 published: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-03
 primaryKeyword: how to install a wired Ring video doorbell
 kind: guide
 categories:
@@ -14,6 +14,7 @@ related:
   - ring-subscription
   - security-cameras-without-wifi
   - security-cameras-without-subscription
+  - best-video-doorbell-without-monthly-fee
 heroAlt: "Illustration of a doorbell, a low-voltage transformer, and a breaker switch. Not an installation photo."
 comparisonCaption: "Transformer ranges Ring published for hardwiring. These are Ring’s numbers, copied so you can see that one range does not fit every model."
 takeaways:
@@ -165,7 +166,7 @@ Live video and the answer button are available without Protect, as Ring describe
 
 Firmware and the Wi-Fi password are now part of the doorbell. When you change the wireless password, the doorbell falls off until you update it. That looks like a wiring failure and is not one. Check the network before you pull the bracket off again.
 
-If you wanted a doorbell that stores video on a device in the house with no plan, Ring’s published model is the wrong target. [Security cameras without a subscription](/security-cameras-without-subscription/) is the storage guide. Switching brands does not remove the transformer question if the new doorbell also wants the old chime wires. Read that brand’s power page with the same seriousness as Ring’s table.
+If you wanted a doorbell that stores video on a device in the house with no plan, Ring’s published model is the wrong target. [Best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/) compares the local paths other brands publish. [Security cameras without a subscription](/security-cameras-without-subscription/) is the wider storage guide. Switching brands does not remove the transformer question if the new doorbell also wants the old chime wires. Read that brand’s power page with the same seriousness as Ring’s table.
 
 ## What this page will not do
 

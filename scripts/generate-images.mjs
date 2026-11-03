@@ -111,6 +111,7 @@ function schematicMeta(id) {
       };
     case "install-ring-video-doorbell":
     case "video-doorbells":
+    case "best-video-doorbell-without-monthly-fee":
       return {
         fig: "FIG. 05",
         code: "CR-LOWVOLT-16V",
@@ -546,7 +547,10 @@ const illustration = `<svg xmlns="http://www.w3.org/2000/svg" width="640" height
   <text x="36" y="329" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#181614">CAMERAREVIEWED FIELD DESK · SOURCE CITATION REQUIRED</text>
 </svg>`;
 
+const only = process.argv[2];
+
 for (const job of jobs) {
+  if (only && job.id !== only) continue;
   if (!job.id || !job.label) throw new Error(`Bad image job: ${JSON.stringify(job)}`);
   const hero = Buffer.from(heroSvg(job.id));
   await sharp(hero)
@@ -570,16 +574,18 @@ for (const job of jobs) {
     .toFile(path.join(ogDir, `${job.id}.jpg`));
 }
 
-await sharp(Buffer.from(illustration))
-  .webp({ quality: 76 })
-  .toFile(path.join(illustrationDir, "candidate-640.webp"));
-await sharp(Buffer.from(illustration))
-  .avif({ quality: 45 })
-  .toFile(path.join(illustrationDir, "candidate-640.avif"));
-await sharp(Buffer.from(logoSvg())).png().toFile(path.join(root, "public/images/logo.png"));
-await sharp(Buffer.from(logoSvg()))
-  .resize(180, 180)
-  .png()
-  .toFile(path.join(root, "public/apple-touch-icon.png"));
+if (!only) {
+  await sharp(Buffer.from(illustration))
+    .webp({ quality: 76 })
+    .toFile(path.join(illustrationDir, "candidate-640.webp"));
+  await sharp(Buffer.from(illustration))
+    .avif({ quality: 45 })
+    .toFile(path.join(illustrationDir, "candidate-640.avif"));
+  await sharp(Buffer.from(logoSvg())).png().toFile(path.join(root, "public/images/logo.png"));
+  await sharp(Buffer.from(logoSvg()))
+    .resize(180, 180)
+    .png()
+    .toFile(path.join(root, "public/apple-touch-icon.png"));
+}
 
-console.log(`wrote images for ${jobs.length} pages`);
+console.log(`wrote images for ${only ?? jobs.length} pages`);

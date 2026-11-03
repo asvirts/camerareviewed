@@ -2,6 +2,7 @@ import { ArticleView } from "../src/components/ArticleView";
 import { Breadcrumbs } from "../src/components/Breadcrumbs";
 import { GuideList } from "../src/components/GuideList";
 import { HeroImage } from "../src/components/HeroImage";
+import { listArticles } from "../src/lib/content";
 import { navItems } from "../src/lib/site";
 import type { Props } from "./[slug].server";
 
@@ -57,7 +58,7 @@ export default function SlugPage({ page, related, category }: Props) {
           </p>
           <p className="sidebar-dossier-links">
             <a href="/editorial-policy/">How we choose &rarr;</a>
-            <a href="/articles/">All 5 guides &rarr;</a>
+            <a href="/articles/">All {listArticles().length} guides &rarr;</a>
           </p>
         </aside>
       </div>

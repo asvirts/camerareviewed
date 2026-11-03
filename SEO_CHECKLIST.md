@@ -60,7 +60,7 @@ Each line is an acceptance criterion and where this repo meets it. Re-check afte
 
 ## Content
 
-- The five guides clear 1,500 words in `parse.ts` (body, summary, takeaways, FAQs, product summaries). They open with the answer, then H2s, lists, a comparison table, and sources.
+- The six guides clear 1,500 words in `parse.ts` (body, summary, takeaways, FAQs, product summaries). They open with the answer, then H2s, lists, a comparison table, and sources.
 - No “we tested”, “we installed”, or star scores. `parse.ts` rejects those phrases. Product names are candidates.
 
 ## Still outside the repo

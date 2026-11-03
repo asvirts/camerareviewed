@@ -8,7 +8,7 @@ export default function HomePage({ page, articles }: Props) {
       <section className="home-hero">
         <div className="home-hero-meta">
           <p className="kicker kicker-pill">Independent desk &middot; no lab scores yet</p>
-          <span className="edition-badge">EDITION 2026.11 // 5 LIVE BRIEFINGS</span>
+          <span className="edition-badge">EDITION 2026.11 // {articles.length} LIVE BRIEFINGS</span>
         </div>
         <h1>{page.h1}</h1>
         <p className="lede">
@@ -121,6 +121,19 @@ export default function HomePage({ page, articles }: Props) {
             <strong>Do you need a Ring subscription?</strong>
             <span className="cluster-desc">
               What Ring&rsquo;s own plan page says still works, and what video history costs.
+            </span>
+            <span className="cluster-cta" aria-hidden="true">
+              Open guide &rarr;
+            </span>
+          </a>
+          <a href="/best-video-doorbell-without-monthly-fee/">
+            <div className="cluster-meta">
+              <span className="cluster-num">BRIEFING 05</span>
+              <span className="cluster-tag">DOORBELL ROUNDUP</span>
+            </div>
+            <strong>Best video doorbell without monthly fee</strong>
+            <span className="cluster-desc">
+              Where the clip lives when you skip a cloud plan, and which pages actually say so.
             </span>
             <span className="cluster-cta" aria-hidden="true">
               Open guide &rarr;

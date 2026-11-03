@@ -49,10 +49,12 @@ function verifyStaticOutput(dist: string): void {
     if (/"@type":"Product"|"@type":"Review"|"@type":"AggregateRating"/.test(html)) {
       failures.push(`${page.path} contains rating schema`);
     }
-    const isArticle =
-      page.path !== "/" && !html.includes("Category</p>") && html.includes("Affiliate disclosure.");
+    // The disclosure page's image alt also contains "Affiliate disclosure."
+    // Match the guide box so that page is not treated as an article.
+    const disclosureMarker = "<strong>Affiliate disclosure.</strong>";
+    const isArticle = html.includes(disclosureMarker);
     if (isArticle) {
-      const disclosure = html.indexOf("Affiliate disclosure.");
+      const disclosure = html.indexOf(disclosureMarker);
       const h1 = html.indexOf("<h1");
       if (disclosure === -1 || disclosure > h1)
         failures.push(`${page.path} disclosure is not above the h1`);

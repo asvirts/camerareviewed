@@ -5,7 +5,7 @@ title: Outdoor Cameras Without a Subscription
 description: "How to choose an outdoor security camera that records locally, with weather, power, night video, and theft of the camera included."
 summary: "Outdoor cameras without a monthly plan still have to survive weather, power limits, and someone walking off with the camera. This draft shows which spec lines decide that, and which models are still TODO."
 published: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-03
 primaryKeyword: outdoor security cameras without a subscription
 kind: roundup
 categories:
@@ -15,6 +15,7 @@ related:
   - security-cameras-without-subscription
   - security-cameras-without-wifi
   - ring-subscription
+  - best-video-doorbell-without-monthly-fee
 heroAlt: "Illustration of a house eave, a camera, and a recorder kept indoors. Not a product photo."
 comparisonCaption: "Outdoor recording patterns compared by where the clip lives if the camera is taken. Verify every model before you buy."
 takeaways:
@@ -186,6 +187,6 @@ Power loss ends the story unless the recorder is on a backup you have tested. A 
 
 ## How this fits the rest of the site
 
-If the outdoor device is a doorbell, the wiring and the chime are the hard part, not the yard. Use the [video doorbell guides](/video-doorbells/) and, for Ring specifically, the wired install summary. Do not drill a doorbell transformer situation with an outdoor-camera checklist.
+If the outdoor device is a doorbell, the wiring and the chime are the hard part, not the yard. Use the [video doorbell guides](/video-doorbells/), the no-fee roundup [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/), and, for Ring specifically, [how to install a wired Ring video doorbell](/install-ring-video-doorbell/). Do not drill a doorbell transformer situation with an outdoor-camera checklist.
 
 If you want a single sentence to shop with: camera outside, archive inside, power you will still respect in month six, and a manufacturer sentence that says what happens with no plan. The cards under the comparison table are places to start that check. They are not a podium. When the TODO line is still there, the ASIN is not a recommendation, and the [affiliate disclosure](/affiliate-disclosure/) is the reason the button exists at all.

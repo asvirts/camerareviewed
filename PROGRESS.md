@@ -2,10 +2,11 @@
 
 Handoff for the next agent. Owner: Andrew Virts. Domain: camerareviewed.com. Stack is Void (`void` 1.5.0) + Vite+ (`vp` 1.4.0) + React, `output: 'static'`, Cloudflare via `void deploy`. Do not switch the site to Astro or Next.js. Do not open a pull request unless Andrew asks. Commit and push to `main`.
 
-Last verified on this machine, after `vp test` and `vp build` both exited 0:
+Last verified on this machine, after `vp check`, `vp test`, and `vp build` all exited 0 on November 3, 2026:
 
-- Vitest: `tests/content.test.ts`, 4 tests passed.
-- `vp build` prerendered every page to `dist/client/*.html` (slashless filename, trailing-slash canonical in the HTML).
+- Vitest: `tests/content.test.ts`, 4 tests passed (six guides).
+- `vp build` prerendered every page to `dist/client/*.html`, including `/best-video-doorbell-without-monthly-fee/` (slashless filename, trailing-slash canonical in the HTML).
+- Lighthouse was not re-run for this article. The table below is still the November 2 run.
 - Lighthouse 12.8.2, mobile, headless Chrome, against `scripts/serve-static.mjs` on the prerendered files (Brotli, security headers):
 
 | Page                                      | Performance | Accessibility | Best Practices | SEO | LCP  | CLS | TBT |
@@ -25,14 +26,16 @@ INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/i
   - `/outdoor-cameras/`, `/indoor-cameras/`, `/video-doorbells/`, `/no-subscription/`
   - `/about/`, `/editorial-policy/`, `/author/andrew-virts/`, `/affiliate-disclosure/`, `/privacy/`, `/contact/`
   - `/404` rendered as `404.html` (`noindex`)
-  - Five guides at the root, trailing-slash canonicals:
+  - Six guides at the root, trailing-slash canonicals:
     - `/security-cameras-without-subscription/`
     - `/outdoor-security-cameras-without-subscription/`
     - `/security-cameras-without-wifi/`
     - `/ring-subscription/`
     - `/install-ring-video-doorbell/`
+    - `/best-video-doorbell-without-monthly-fee/`
 - Articles are Markdown + YAML frontmatter in `content/articles/`. Hubs are `content/categories/*.md`. Parsed by `src/lib/parse.ts` (title ≤60, description ≤155, H1 contains the keyword, 1500+ words, H2 and H3, no “we tested” / “we installed”).
 - Article template (`src/components/ArticleView.tsx`): disclosure above the H1, byline, updated date, takeaways, TOC, prose, `ComparisonTable`, `ProductCard` (TODO + empty ASIN, `rel="sponsored nofollow noopener"`, new tab), FAQ, sources, related guides.
+- `vp build` treats a page as a guide only when the HTML contains `<strong>Affiliate disclosure.</strong>`. The disclosure page’s image alt also contains “Affiliate disclosure.” and is not a guide.
 - JSON-LD: Organization + WebSite + Person on the home page; BlogPosting (author, datePublished, dateModified), BreadcrumbList, FAQPage on guides; ItemList on `kind: roundup` only. No Product, Review, or AggregateRating.
 - `AMAZON_TAG`, `GOOGLE_SITE_VERIFICATION`, `BING_SITE_VERIFICATION`, and `CF_WEB_ANALYTICS_TOKEN` are read at build time in `config/defines.ts` and inlined. Empty tag omits `?tag=`. Void rejects any dotenv file other than `.env` (do not add `.env.example`).
 - `public/robots.txt`, generated `public/sitemap.xml` and `public/feed.xml` (also rewritten into `dist/client` when the SEO plugin runs).
@@ -58,7 +61,7 @@ INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/i
 
 1. Andrew deploys from his own machine. Steps are in the README. Do not deploy from an agent. Init used `--deploy none`, so the first commands are `void connect --platform cloudflare` and `void deploy --platform cloudflare`, then `void domain add` for `camerareviewed.com` and `www.camerareviewed.com`.
 2. After DNS works: Search Console and Bing tokens, submit `https://camerareviewed.com/sitemap.xml`, then Cloudflare Web Analytics (and the CSP edit in the README). The mailbox in `CONTACT_EMAIL` and the author bio are still placeholders.
-3. Product cards stay TODO until Andrew verifies models and ASINs. The next articles are the 20 items in `CONTENT_PLAN.md`. Indoor has a hub and no article yet; that is intentional.
+3. Product cards stay TODO until Andrew verifies models and ASINs. The next unpublished article is item 2 in `CONTENT_PLAN.md` (wireless security camera system without a monthly fee). Item 1 is published. Item 10 is folded into that doorbell guide, not a second URL. Indoor has a hub and no article yet; that is intentional.
 4. `vp check` passed earlier in the session, before these docs. Re-run it after the next code edit. `pnpm exec tsc --noEmit` passes. `vp check` does not typecheck unless `lint.options.typeCheck` is enabled.
 5. No pull request. Keep pushing to `main`.
 
