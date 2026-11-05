@@ -139,6 +139,19 @@ export default function HomePage({ page, articles }: Props) {
               Open guide &rarr;
             </span>
           </a>
+          <a href="/wireless-security-camera-system-without-monthly-fee/">
+            <div className="cluster-meta">
+              <span className="cluster-num">BRIEFING 06</span>
+              <span className="cluster-tag">WIRELESS KIT</span>
+            </div>
+            <strong>Wireless camera system, no monthly fee</strong>
+            <span className="cluster-desc">
+              Several cameras, one indoor base, and where the clips sit when you skip a cloud plan.
+            </span>
+            <span className="cluster-cta" aria-hidden="true">
+              Open guide &rarr;
+            </span>
+          </a>
         </div>
       </section>
 

@@ -73,6 +73,7 @@ function schematicMeta(id) {
     case "home":
     case "security-cameras-without-subscription":
     case "no-subscription":
+    case "wireless-security-camera-system-without-monthly-fee":
       return {
         fig: "FIG. 01",
         code: "CR-ARCH-LOCAL",

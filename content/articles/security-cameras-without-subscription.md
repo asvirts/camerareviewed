@@ -5,7 +5,7 @@ title: Security Cameras Without a Subscription
 description: "How to buy a home security camera that stores footage without a monthly cloud plan, and which spec lines to verify before you pay."
 summary: "A subscription-free camera still has to put the video somewhere. This guide explains local cards, hubs, and recorders, then lists candidate brands to verify rather than scores we did not earn."
 published: 2026-11-02
-updated: 2026-11-03
+updated: 2026-11-05
 primaryKeyword: security cameras without a subscription
 kind: roundup
 categories:
@@ -15,6 +15,7 @@ related:
   - security-cameras-without-wifi
   - ring-subscription
   - best-video-doorbell-without-monthly-fee
+  - wireless-security-camera-system-without-monthly-fee
 heroAlt: "Illustration of a camera, a memory card, and a small recorder. Not a photo of a specific model."
 comparisonCaption: "Candidate approaches for recording without a required cloud plan. Every cell is a prompt to verify, not a lab result."
 takeaways:
@@ -196,7 +197,7 @@ You travel and you will not maintain a drive. You want a company to store the cl
 
 None of those cases is a moral failure. The mistake is paying for cloud history when you thought you were paying for a camera that already kept history, or skipping a plan and discovering the first real event was never saved.
 
-If you are on the fence with a Ring doorbell specifically, the plan page and the support article are enough to decide. This guide will not invent a winner. If you want a doorbell that stores the clip without Ring’s plan, the candidate paths are in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/).
+If you are on the fence with a Ring doorbell specifically, the plan page and the support article are enough to decide. This guide will not invent a winner. If you want a doorbell that stores the clip without Ring’s plan, the candidate paths are in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/). If the purchase is several wireless cameras sharing one indoor base, that kit question is [best wireless security camera system without monthly fee](/wireless-security-camera-system-without-monthly-fee/).
 
 ## A buying order that survives the ads
 

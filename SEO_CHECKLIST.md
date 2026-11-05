@@ -5,12 +5,15 @@ Each line is an acceptance criterion and where this repo meets it. Re-check afte
 ## Render and speed
 
 - **Static HTML for every page.** `void.config.ts` sets `output: 'static'`. `vp build` writes one HTML file per route under `dist/client/` (`about.html` for `/about/`). View source contains the article text. Island pages ship no component JavaScript; `dist/client/assets/islands-client-*.js` is 0 bytes and the HTML does not load it.
-- **Core Web Vitals.** Mobile Lighthouse 12.8.2 on 2 Nov 2026, local static server with Brotli:
+- **Core Web Vitals.** Mobile Lighthouse 12.8.2, local static server with Brotli. The first two rows are 2 Nov 2026. The wireless-system row is 5 Nov 2026:
 
-  | URL                                       | Performance | Accessibility | Best Practices | SEO | LCP  | CLS | TBT |
-  | ----------------------------------------- | ----------- | ------------- | -------------- | --- | ---- | --- | --- |
-  | `/`                                       | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
-  | `/security-cameras-without-subscription/` | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
+  | URL                                                     | Performance | Accessibility | Best Practices | SEO | LCP  | CLS | TBT |
+  | ------------------------------------------------------- | ----------- | ------------- | -------------- | --- | ---- | --- | --- |
+  | `/`                                                     | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
+  | `/security-cameras-without-subscription/`               | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
+  | `/wireless-security-camera-system-without-monthly-fee/` | 100         | 100           | 100            | 100 | 1.2s | 0   | 0ms |
+
+  The wireless-system row is a separate mobile run on 5 Nov 2026, same Lighthouse 12.8.2 and `scripts/serve-static.mjs` setup. The first two rows are still the 2 Nov 2026 run.
 
   Lab INP is not reported because the trace does not click. There is no hydration work. LCP is under 2.5s and CLS is under 0.1.
 
@@ -60,7 +63,7 @@ Each line is an acceptance criterion and where this repo meets it. Re-check afte
 
 ## Content
 
-- The six guides clear 1,500 words in `parse.ts` (body, summary, takeaways, FAQs, product summaries). They open with the answer, then H2s, lists, a comparison table, and sources.
+- The seven guides clear 1,500 words in `parse.ts` (body, summary, takeaways, FAQs, product summaries). They open with the answer, then H2s, lists, a comparison table, and sources.
 - No “we tested”, “we installed”, or star scores. `parse.ts` rejects those phrases. Product names are candidates.
 
 ## Still outside the repo

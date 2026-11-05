@@ -5,7 +5,7 @@ title: Do You Need a Ring Subscription?
 description: "What Ring says you can do without a Protect plan, what video history costs, and the plan names and prices listed on ring.com when this draft was written."
 summary: "You can answer the door and watch live video without Ring Protect. You cannot save and replay motion video without a plan, according to Ring’s own support page. Here are the tiers, with the date attached."
 published: 2026-11-02
-updated: 2026-11-03
+updated: 2026-11-05
 primaryKeyword: do you need a Ring subscription
 kind: guide
 categories:
@@ -15,6 +15,7 @@ related:
   - security-cameras-without-subscription
   - outdoor-security-cameras-without-subscription
   - best-video-doorbell-without-monthly-fee
+  - wireless-security-camera-system-without-monthly-fee
 heroAlt: "Illustration of a doorbell and a calendar page. Not a photo of a Ring device."
 comparisonCaption: "Ring’s public plan split as of the ring.com/plans page fetched for this draft on November 2, 2026. Re-check before you pay."
 takeaways:
@@ -170,7 +171,7 @@ Payment is card or the methods on ring.com. Ring says it does not take cash, che
 
 Buy the plan if you want Ring’s cloud timeline, the smart alerts on a supported device, or alarm monitoring you have actually read.
 
-Do not buy the plan if you wanted a file in the house and you are willing to change hardware. [Security cameras without a subscription](/security-cameras-without-subscription/) is the guide for that design. If the device is the doorbell, the storage paths other brands publish are in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/). Outdoor placement and theft of the camera are in the [outdoor guide](/outdoor-security-cameras-without-subscription/). A local-storage doorbell from another brand can still be the wrong install for your chime and your transformer. The existence of another brand is not a recommendation of a specific model. The cards on this page are TODO on purpose.
+Do not buy the plan if you wanted a file in the house and you are willing to change hardware. [Security cameras without a subscription](/security-cameras-without-subscription/) is the guide for that design. If the device is the doorbell, the storage paths other brands publish are in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/). If you want several wireless cameras recording to a base indoors, the candidate paths are in [best wireless security camera system without monthly fee](/wireless-security-camera-system-without-monthly-fee/). Outdoor placement and theft of the camera are in the [outdoor guide](/outdoor-security-cameras-without-subscription/). A local-storage doorbell from another brand can still be the wrong install for your chime and your transformer. The existence of another brand is not a recommendation of a specific model. The cards on this page are TODO on purpose.
 
 Do not buy Pro for a face-recognition feature your city does not allow. Read the footnote.
 
