@@ -130,6 +130,15 @@ function schematicMeta(id) {
         secondary: "#8f2d10",
         variant: "indoor",
       };
+    case "arlo-without-subscription":
+      return {
+        fig: "FIG. 07",
+        code: "CR-ARLO-PLAN",
+        subtitle: "ARLO SPLIT // LIVE VIEW · HUB DRIVE · CLOUD HISTORY",
+        accent: "#8f2d10",
+        secondary: "#1b4b38",
+        variant: "arlo-plan",
+      };
     default:
       return {
         fig: "DESK REF",
@@ -415,6 +424,49 @@ function renderVariantArtwork(variant, accent, secondary) {
         <text x="36" y="226" font-family="sans-serif" font-size="16" fill="#463f38">Keep interior clips on an on-device card or home recorder.</text>
         <text x="36" y="290" font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="700" fill="#181614">03 / TWO-WAY AUDIO &amp; SIREN</text>
         <text x="36" y="320" font-family="sans-serif" font-size="16" fill="#463f38">Plug-in power supports continuous recording without battery swaps.</text>
+      </g>
+    `;
+  }
+
+  if (variant === "arlo-plan") {
+    return `
+      <g transform="translate(72, 168)">
+        <rect width="360" height="400" rx="6" fill="#fffdf9" stroke="${secondary}" stroke-width="3"/>
+        <rect width="360" height="48" fill="${secondary}"/>
+        <text x="18" y="31" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fffdf9">01 // NO PLAN · LIVE VIEW</text>
+        <rect x="78" y="78" width="204" height="132" rx="16" fill="#f4f0e8" stroke="#181614" stroke-width="3"/>
+        <circle cx="180" cy="144" r="36" fill="#fffdf9" stroke="#181614" stroke-width="3"/>
+        <circle cx="180" cy="144" r="12" fill="${secondary}"/>
+        <text x="180" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#181614">LIVE STREAM</text>
+        <text x="180" y="278" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#463f38">Push alerts · two-way audio</text>
+        <rect x="36" y="312" width="288" height="58" rx="4" fill="#e6f0ec" stroke="${secondary}" stroke-width="2"/>
+        <text x="180" y="346" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="${secondary}">CLOUD HISTORY STOPS</text>
+      </g>
+      <g transform="translate(460, 168)">
+        <rect width="360" height="400" rx="6" fill="#fffdf9" stroke="#181614" stroke-width="3"/>
+        <rect width="360" height="48" fill="#181614"/>
+        <text x="18" y="31" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fffdf9">02 // HUB OR CARD</text>
+        <rect x="118" y="84" width="124" height="168" rx="8" fill="#f4f0e8" stroke="#181614" stroke-width="3"/>
+        <rect x="136" y="108" width="88" height="18" rx="2" fill="#fffdf9" stroke="#181614" stroke-width="2"/>
+        <rect x="136" y="138" width="88" height="18" rx="2" fill="#fffdf9" stroke="#181614" stroke-width="2"/>
+        <rect x="148" y="176" width="64" height="40" rx="3" fill="${accent}"/>
+        <text x="180" y="288" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#181614">USB · microSD</text>
+        <text x="180" y="314" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#463f38">Triggered clips only</text>
+        <rect x="36" y="338" width="288" height="36" rx="4" fill="#fdf5e2" stroke="${accent}" stroke-width="2"/>
+        <text x="180" y="361" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="${accent}">NOT EVERY MODEL</text>
+      </g>
+      <g transform="translate(848, 168)">
+        <rect width="360" height="400" rx="6" fill="#fffdf9" stroke="${accent}" stroke-width="3"/>
+        <rect width="360" height="48" fill="${accent}"/>
+        <text x="18" y="31" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fffdf9">03 // PAID CLOUD PLAN</text>
+        <rect x="70" y="86" width="220" height="150" rx="8" fill="#f4f0e8" stroke="#181614" stroke-width="3"/>
+        <text x="180" y="128" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700" fill="#181614">60-DAY</text>
+        <text x="180" y="156" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700" fill="${accent}">VIDEO HISTORY</text>
+        <text x="180" y="188" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#463f38">Activity zones · detection</text>
+        <text x="180" y="276" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#181614">US STICKER · DATED</text>
+        <text x="180" y="304" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#463f38">Re-read the plan page</text>
+        <rect x="36" y="338" width="288" height="36" rx="4" fill="#fffdf9" stroke="${accent}" stroke-width="2"/>
+        <text x="180" y="361" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="${accent}">ONE ADDRESS PER PLAN</text>
       </g>
     `;
   }

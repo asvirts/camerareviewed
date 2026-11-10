@@ -5,7 +5,7 @@ title: Best Wireless Security Camera System Without Monthly Fee
 description: "The best wireless security camera system without monthly fee stores clips on an indoor hub. Check the radio, the drive, and what a plan still gates."
 summary: "A no-fee wireless system is several cameras plus one base that keeps the clips. This roundup reads the eufy, Reolink, Tapo, and Blink pages, and it leaves every product card as a TODO."
 published: 2026-11-05
-updated: 2026-11-05
+updated: 2026-11-10
 primaryKeyword: best wireless security camera system without monthly fee
 kind: roundup
 categories:
@@ -16,6 +16,7 @@ related:
   - outdoor-security-cameras-without-subscription
   - security-cameras-without-wifi
   - ring-subscription
+  - arlo-without-subscription
 heroAlt: "Illustration of several cameras linked to a base station indoors. Not a photo of a specific system."
 comparisonCaption: "Storage and radio claims from manufacturer pages fetched November 5, 2026. Confirm the kit in the cart. This table is not a ranked test."
 takeaways:
@@ -300,7 +301,7 @@ Phone alerts and remote live view still want the internet on every one of these 
 
 ## How this sits next to the other guides
 
-A doorbell is not this kit. The chime and the transformer are a different install, covered on the [video doorbell hub](/video-doorbells/) and in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/). A single outdoor camera, even a wireless one, is the outdoor guide. A PoE recorder is the no-Wi-Fi guide. Ring’s bill is the Ring guide.
+A doorbell is not this kit. The chime and the transformer are a different install, covered on the [video doorbell hub](/video-doorbells/) and in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/). A single outdoor camera, even a wireless one, is the outdoor guide. A PoE recorder is the no-Wi-Fi guide. Ring’s bill is the Ring guide. Arlo’s SmartHub is a base too, and Arlo’s own articles disagree about whether that drive replaces a plan. That reading is [Arlo without subscription](/arlo-without-subscription/).
 
 There is no first, second, and third system at the bottom of this page. A ranking would imply the kits were installed and the false alerts were counted. That work has not been done. The comparison table is a set of claims you can check. The product cards are candidates. When Andrew verifies a model, the TODO line comes off and the ASIN gets filled in. Until then, an Amazon button is a search, and the [affiliate disclosure](/affiliate-disclosure/) tells you what that button is.
 

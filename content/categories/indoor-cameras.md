@@ -20,4 +20,6 @@ Storage should be boring. A card in the camera is fine for a single room if you 
 
 Privacy is not a footnote. Tell the people who use the room. Do not put a camera in a bathroom or a bedroom and call it security. Do not use this site as instructions for hiding a camera. Firmware updates still matter on a camera that never goes outside; the network path is the same.
 
+Arlo’s Essential Indoor Camera (3rd Gen) is called out on Arlo’s compatibility page as unable to pair with a SmartHub. The 2nd Gen still can. That limit is explained in [Arlo without subscription](/arlo-without-subscription/). It is not an indoor buying roundup.
+
 When an indoor-only draft is written, it will be linked here and from the [guide index](/articles/). Until then, use the no-subscription guide’s checklist and treat any indoor product card you see elsewhere on the site as a TODO, not a test.

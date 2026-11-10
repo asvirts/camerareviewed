@@ -2,19 +2,21 @@
 
 Handoff for the next agent. Owner: Andrew Virts. Domain: camerareviewed.com. Stack is Void (`void` 1.5.0) + Vite+ (`vp` 1.4.0) + React, `output: 'static'`, Cloudflare via `void deploy`. Do not switch the site to Astro or Next.js. Do not open a pull request unless Andrew asks. Commit and push to `main`.
 
-Last verified on this machine on November 5, 2026, for `/wireless-security-camera-system-without-monthly-fee/`:
+Last verified on this machine on November 10, 2026, for `/arlo-without-subscription/`:
 
 - `vp check` passed (format and lint).
-- `vp test`: `tests/content.test.ts`, 4 tests passed. The count assertion is seven guides.
-- `vp build` exited 0 and wrote `dist/client/wireless-security-camera-system-without-monthly-fee.html` (slashless filename, trailing-slash canonical in the HTML). `dist/client/assets/islands-client-*.js` is still 0 bytes.
-- `node scripts/serve-static.mjs` returned 200 for that URL with Brotli and the security headers. The home briefing, the no-subscription hub, the outdoor hub, and the related guides link to it, and those links open the new page.
-- Lighthouse 12.8.2, mobile, headless Chrome, against `scripts/serve-static.mjs` on the prerendered files (Brotli, security headers). The first two rows are the November 2 run. The wireless-system row is November 5:
+- `vp test`: `tests/content.test.ts`, 4 tests passed. The count assertion is eight guides.
+- `pnpm exec tsc --noEmit` passed.
+- `vp build` exited 0 and wrote `dist/client/arlo-without-subscription.html` (slashless filename, trailing-slash canonical in the HTML). `dist/client/assets/islands-client-*.js` is still 0 bytes and is not referenced by the article HTML.
+- `node scripts/serve-static.mjs` returned 200 for that URL with Brotli and the security headers, and 301 from the slashless path to the trailing-slash URL. The home briefing, the no-subscription, outdoor, indoor, and doorbell hubs, and the related guides link to it, and those links are in the prerendered HTML.
+- Lighthouse 12.8.2, mobile, headless Chrome, against `scripts/serve-static.mjs` on the prerendered files (Brotli, security headers). The first two rows are the November 2 run. The wireless-system row is November 5. The Arlo row is November 10:
 
 | Page                                                    | Performance | Accessibility | Best Practices | SEO | LCP  | CLS | TBT |
 | ------------------------------------------------------- | ----------- | ------------- | -------------- | --- | ---- | --- | --- |
 | `/`                                                     | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
 | `/security-cameras-without-subscription/`               | 100         | 100           | 100            | 100 | 0.9s | 0   | 0ms |
 | `/wireless-security-camera-system-without-monthly-fee/` | 100         | 100           | 100            | 100 | 1.2s | 0   | 0ms |
+| `/arlo-without-subscription/`                           | 100         | 100           | 100            | 100 | 1.2s | 0   | 0ms |
 
 INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/islands-client-*.js` is 0 bytes and is not referenced). The same Lighthouse rows are in `SEO_CHECKLIST.md`.
 
@@ -28,7 +30,7 @@ INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/i
   - `/outdoor-cameras/`, `/indoor-cameras/`, `/video-doorbells/`, `/no-subscription/`
   - `/about/`, `/editorial-policy/`, `/author/andrew-virts/`, `/affiliate-disclosure/`, `/privacy/`, `/contact/`
   - `/404` rendered as `404.html` (`noindex`)
-  - Seven guides at the root, trailing-slash canonicals:
+  - Eight guides at the root, trailing-slash canonicals:
     - `/security-cameras-without-subscription/`
     - `/outdoor-security-cameras-without-subscription/`
     - `/security-cameras-without-wifi/`
@@ -36,6 +38,7 @@ INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/i
     - `/install-ring-video-doorbell/`
     - `/best-video-doorbell-without-monthly-fee/`
     - `/wireless-security-camera-system-without-monthly-fee/`
+    - `/arlo-without-subscription/`
 - Articles are Markdown + YAML frontmatter in `content/articles/`. Hubs are `content/categories/*.md`. Parsed by `src/lib/parse.ts` (title ≤60, description ≤155, H1 contains the keyword, 1500+ words, H2 and H3, no “we tested” / “we installed”).
 - Article template (`src/components/ArticleView.tsx`): disclosure above the H1, byline, updated date, takeaways, TOC, prose, `ComparisonTable`, `ProductCard` (TODO + empty ASIN, `rel="sponsored nofollow noopener"`, new tab), FAQ, sources, related guides.
 - `vp build` treats a page as a guide only when the HTML contains `<strong>Affiliate disclosure.</strong>`. The disclosure page’s image alt also contains “Affiliate disclosure.” and is not a guide.
@@ -64,7 +67,7 @@ INP was not in the lab trace. There is no page JavaScript (`dist/client/assets/i
 
 1. Andrew deploys from his own machine. Steps are in the README. Do not deploy from an agent. Init used `--deploy none`, so the first commands are `void connect --platform cloudflare` and `void deploy --platform cloudflare`, then `void domain add` for `camerareviewed.com` and `www.camerareviewed.com`.
 2. After DNS works: Search Console and Bing tokens, submit `https://camerareviewed.com/sitemap.xml`, then Cloudflare Web Analytics (and the CSP edit in the README). The mailbox in `CONTACT_EMAIL` and the author bio are still placeholders.
-3. Product cards stay TODO until Andrew verifies models and ASINs. The next unpublished article is item 3 in `CONTENT_PLAN.md` (Arlo without a subscription). Items 1 and 2 are published. Item 2 is `/wireless-security-camera-system-without-monthly-fee/`. Item 10 is folded into the doorbell guide, not a second URL. Item 12 (a single wireless outdoor camera) is still a later URL and is not the same page as the wireless system. Indoor has a hub and no article yet; that is intentional. `run1.csv` is still not in the repo.
+3. Product cards stay TODO until Andrew verifies models and ASINs. The next unpublished article is item 4 in `CONTENT_PLAN.md` (Blink without a subscription). Items 1, 2, and 3 are published. Item 3 is `/arlo-without-subscription/`. Item 10 is folded into the doorbell guide, not a second URL. Item 12 (a single wireless outdoor camera) is still a later URL and is not the same page as the wireless system. Indoor has a hub and no article yet; that is intentional. `run1.csv` is still not in the repo.
 4. `vp check` passed earlier in the session, before these docs. Re-run it after the next code edit. `pnpm exec tsc --noEmit` passes. `vp check` does not typecheck unless `lint.options.typeCheck` is enabled.
 5. No pull request. Keep pushing to `main`.
 

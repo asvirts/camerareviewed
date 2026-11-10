@@ -152,6 +152,19 @@ export default function HomePage({ page, articles }: Props) {
               Open guide &rarr;
             </span>
           </a>
+          <a href="/arlo-without-subscription/">
+            <div className="cluster-meta">
+              <span className="cluster-num">BRIEFING 07</span>
+              <span className="cluster-tag">ARLO PLANS</span>
+            </div>
+            <strong>Arlo without subscription</strong>
+            <span className="cluster-desc">
+              What still live-streams, which hubs keep a clip, and what the US plans cost.
+            </span>
+            <span className="cluster-cta" aria-hidden="true">
+              Open guide &rarr;
+            </span>
+          </a>
         </div>
       </section>
 
