@@ -43,8 +43,8 @@ describe("search metadata", () => {
     }
   });
 
-  it("publishes eight guides and four hubs with no orphan links", () => {
-    expect(listArticles()).toHaveLength(8);
+  it("publishes nine guides and four hubs with no orphan links", () => {
+    expect(listArticles()).toHaveLength(9);
     expect(listCategories()).toHaveLength(4);
     const paths = new Set(indexableUrls().map((page) => page.path));
     expect(paths.has("/indoor-cameras/")).toBe(true);

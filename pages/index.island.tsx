@@ -165,6 +165,20 @@ export default function HomePage({ page, articles }: Props) {
               Open guide &rarr;
             </span>
           </a>
+          <a href="/blink-local-storage-without-subscription/">
+            <div className="cluster-meta">
+              <span className="cluster-num">BRIEFING 08</span>
+              <span className="cluster-tag">BLINK STORAGE</span>
+            </div>
+            <strong>Blink local storage without subscription</strong>
+            <span className="cluster-desc">
+              Which Sync Module keeps a clip, which one does not, and what a trial does to the
+              drive.
+            </span>
+            <span className="cluster-cta" aria-hidden="true">
+              Open guide &rarr;
+            </span>
+          </a>
         </div>
       </section>
 

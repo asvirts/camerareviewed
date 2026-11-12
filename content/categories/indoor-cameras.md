@@ -22,4 +22,6 @@ Privacy is not a footnote. Tell the people who use the room. Do not put a camera
 
 Arlo’s Essential Indoor Camera (3rd Gen) is called out on Arlo’s compatibility page as unable to pair with a SmartHub. The 2nd Gen still can. That limit is explained in [Arlo without subscription](/arlo-without-subscription/). It is not an indoor buying roundup.
 
+Blink’s Mini is the other indoor case with a plan catch. The Mini FAQ says the camera does not need a Sync Module to run, and that a saved clip without a plan needs a Sync Module 2 on the same system. That limit is explained in [Blink local storage without subscription](/blink-local-storage-without-subscription/).
+
 When an indoor-only draft is written, it will be linked here and from the [guide index](/articles/). Until then, use the no-subscription guide’s checklist and treat any indoor product card you see elsewhere on the site as a TODO, not a test.

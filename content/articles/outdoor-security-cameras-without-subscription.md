@@ -5,7 +5,7 @@ title: Outdoor Cameras Without a Subscription
 description: "How to choose an outdoor security camera that records locally, with weather, power, night video, and theft of the camera included."
 summary: "Outdoor cameras without a monthly plan still have to survive weather, power limits, and someone walking off with the camera. This draft shows which spec lines decide that, and which models are still TODO."
 published: 2026-11-02
-updated: 2026-11-10
+updated: 2026-11-12
 primaryKeyword: outdoor security cameras without a subscription
 kind: roundup
 categories:
@@ -18,6 +18,7 @@ related:
   - best-video-doorbell-without-monthly-fee
   - wireless-security-camera-system-without-monthly-fee
   - arlo-without-subscription
+  - blink-local-storage-without-subscription
 heroAlt: "Illustration of a house eave, a camera, and a recorder kept indoors. Not a product photo."
 comparisonCaption: "Outdoor recording patterns compared by where the clip lives if the camera is taken. Verify every model before you buy."
 takeaways:
@@ -193,6 +194,6 @@ If the outdoor device is a doorbell, the wiring and the chime are the hard part,
 
 If the purchase is several wireless cameras on one indoor base, the kit roundup is [best wireless security camera system without monthly fee](/wireless-security-camera-system-without-monthly-fee/). Weather, theft, and power on this page still apply to those cameras. The system page is where the shared archive and the radio between camera and base are written down.
 
-If the outdoor cameras are Arlo, the plan question is separate from weather. [Arlo without subscription](/arlo-without-subscription/) is which hubs still store a clip, and which current models Arlo says cannot pair with a hub.
+If the outdoor cameras are Arlo, the plan question is separate from weather. [Arlo without subscription](/arlo-without-subscription/) is which hubs still store a clip, and which current models Arlo says cannot pair with a hub. If they are Blink, [Blink local storage without subscription](/blink-local-storage-without-subscription/) is which Sync Module stores a clip, and which module shipped in the bundle does not.
 
 If you want a single sentence to shop with: camera outside, archive inside, power you will still respect in month six, and a manufacturer sentence that says what happens with no plan. The cards under the comparison table are places to start that check. They are not a podium. When the TODO line is still there, the ASIN is not a recommendation, and the [affiliate disclosure](/affiliate-disclosure/) is the reason the button exists at all.

@@ -18,6 +18,8 @@ If the purchase is several wireless cameras sharing one indoor base, start with 
 
 If the cameras are already Arlo, start with [Arlo without subscription](/arlo-without-subscription/). It stays on Arlo’s trial, hub, and plan pages: what still runs with no plan, which base stations take a drive, and which current models cannot use that drive.
 
+If the cameras are already Blink, start with [Blink local storage without subscription](/blink-local-storage-without-subscription/). It stays on Blink’s storage and Sync Module pages: which module keeps a clip with no plan, which module in the box does not, and where Blink’s own articles disagree.
+
 If you are still choosing a camera rather than a doorbell, start with [security cameras without a subscription](/security-cameras-without-subscription/). It separates three patterns that ads tend to blur: a card in the camera, a hub or NVR inside the house, and a cloud archive. It also says what “no monthly fee” does not mean. Many of these cameras still want an account. Many still use the internet for notifications. Some still charge for a smart detection feature even when the video file stays at home.
 
 Outdoor placement changes the storage question. A card inside a camera on the eaves is easy to steal along with the camera. A recorder in a closet is harder to walk off with, and it can keep recording when the internet drops. That is the subject of [outdoor security cameras without a subscription](/outdoor-security-cameras-without-subscription/) and of [security cameras that work without Wi-Fi](/security-cameras-without-wifi/). The second one is where cellular cameras belong, too. A data plan is a recurring fee even if the box says there is no cloud subscription.

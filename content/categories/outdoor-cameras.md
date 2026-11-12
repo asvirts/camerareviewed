@@ -24,4 +24,6 @@ A multi-camera wireless kit, several cameras and one base indoors, is [best wire
 
 Arlo wire-free cameras add a plan question to the weather question. [Arlo without subscription](/arlo-without-subscription/) reads Arlo’s hub compatibility page, including which outdoor models still pair and which do not.
 
+Blink outdoor cameras add a module question. [Blink local storage without subscription](/blink-local-storage-without-subscription/) reads Blink’s Sync Module pages, including which modules store a clip and which ones only look like they might.
+
 Placement, neighbor privacy, and firmware belong in the same decision as resolution. A sharper camera aimed at a sidewalk you do not own is not a better camera. The guides say that in plain language and leave local law to you and, when you need it, a local professional. This site does not book installers.

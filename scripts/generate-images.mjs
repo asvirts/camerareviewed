@@ -139,6 +139,15 @@ function schematicMeta(id) {
         secondary: "#1b4b38",
         variant: "arlo-plan",
       };
+    case "blink-local-storage-without-subscription":
+      return {
+        fig: "FIG. 08",
+        code: "CR-BLINK-LS",
+        subtitle: "BLINK SPLIT // LIVE VIEW · MODULE DRIVE · TRIAL CLOUD",
+        accent: "#8f2d10",
+        secondary: "#1b4b38",
+        variant: "blink-plan",
+      };
     default:
       return {
         fig: "DESK REF",
@@ -467,6 +476,48 @@ function renderVariantArtwork(variant, accent, secondary) {
         <text x="180" y="304" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#463f38">Re-read the plan page</text>
         <rect x="36" y="338" width="288" height="36" rx="4" fill="#fffdf9" stroke="${accent}" stroke-width="2"/>
         <text x="180" y="361" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="${accent}">ONE ADDRESS PER PLAN</text>
+      </g>
+    `;
+  }
+
+  if (variant === "blink-plan") {
+    return `
+      <g transform="translate(72, 168)">
+        <rect width="360" height="400" rx="6" fill="#fffdf9" stroke="${secondary}" stroke-width="3"/>
+        <rect width="360" height="48" fill="${secondary}"/>
+        <text x="18" y="31" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fffdf9">01 // NO PLAN · LIVE VIEW</text>
+        <rect x="78" y="78" width="204" height="132" rx="16" fill="#f4f0e8" stroke="#181614" stroke-width="3"/>
+        <circle cx="180" cy="144" r="36" fill="#fffdf9" stroke="#181614" stroke-width="3"/>
+        <circle cx="180" cy="144" r="12" fill="${secondary}"/>
+        <text x="180" y="252" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#181614">LIVE STREAM</text>
+        <text x="180" y="278" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#463f38">Alerts · two-way on one page</text>
+        <rect x="36" y="312" width="288" height="58" rx="4" fill="#e6f0ec" stroke="${secondary}" stroke-width="2"/>
+        <text x="180" y="346" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="${secondary}">NO STORED CLIP</text>
+      </g>
+      <g transform="translate(460, 168)">
+        <rect width="360" height="400" rx="6" fill="#fffdf9" stroke="#181614" stroke-width="3"/>
+        <rect width="360" height="48" fill="#181614"/>
+        <text x="18" y="31" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fffdf9">02 // MODULE + DRIVE</text>
+        <rect x="118" y="84" width="124" height="168" rx="8" fill="#f4f0e8" stroke="#181614" stroke-width="3"/>
+        <rect x="136" y="118" width="88" height="22" rx="2" fill="${accent}"/>
+        <rect x="148" y="156" width="64" height="48" rx="3" fill="#fffdf9" stroke="#181614" stroke-width="2"/>
+        <text x="180" y="288" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#181614">USB · microSD</text>
+        <text x="180" y="314" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#463f38">Motion clips, until full</text>
+        <rect x="36" y="338" width="288" height="36" rx="4" fill="#fdf5e2" stroke="${accent}" stroke-width="2"/>
+        <text x="180" y="361" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="${accent}">CORE STORES NOTHING</text>
+      </g>
+      <g transform="translate(848, 168)">
+        <rect width="360" height="400" rx="6" fill="#fffdf9" stroke="${accent}" stroke-width="3"/>
+        <rect width="360" height="48" fill="${accent}"/>
+        <text x="18" y="31" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700" fill="#fffdf9">03 // TRIAL OR PLAN</text>
+        <rect x="70" y="86" width="220" height="150" rx="8" fill="#f4f0e8" stroke="#181614" stroke-width="3"/>
+        <text x="180" y="128" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700" fill="#181614">CLOUD CLIP</text>
+        <text x="180" y="156" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700" fill="${accent}">DAILY BACKUP</text>
+        <text x="180" y="188" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#463f38">Backup opens on a computer</text>
+        <text x="180" y="276" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="700" fill="#181614">60 DAYS AND 180 DAYS</text>
+        <text x="180" y="304" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#463f38">Blink pages disagree</text>
+        <rect x="36" y="338" width="288" height="36" rx="4" fill="#fffdf9" stroke="${accent}" stroke-width="2"/>
+        <text x="180" y="361" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="${accent}">US STICKER · DATED</text>
       </g>
     `;
   }

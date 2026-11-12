@@ -5,7 +5,7 @@ title: Security Cameras That Work Without Wi-Fi
 description: "Which security cameras record without Wi-Fi, how PoE and coax differ from cellular, and why a data plan is still a monthly bill."
 summary: "No Wi-Fi can mean a cabled recorder, a camera that keeps writing during an outage, or a cellular camera with its own data fee. Those are three different buys."
 published: 2026-11-02
-updated: 2026-11-10
+updated: 2026-11-12
 primaryKeyword: security cameras that work without Wi-Fi
 kind: roundup
 categories:
@@ -16,6 +16,7 @@ related:
   - install-ring-video-doorbell
   - wireless-security-camera-system-without-monthly-fee
   - arlo-without-subscription
+  - blink-local-storage-without-subscription
 heroAlt: "Illustration of a camera linked by a cable to a recorder, with a Wi-Fi symbol set aside. Not a product photo."
 comparisonCaption: "Ways to record when you cannot or will not use Wi-Fi. Cellular is listed because people confuse it with no network at all."
 takeaways:
@@ -173,7 +174,7 @@ A PoE doorbell is the cable version of a doorbell. It belongs in the same planni
 
 1. If you can run one cable per camera, buy PoE into a recorder and put the drive indoors. Confirm channel count, drive size, and the cable length you actually need.
 2. If the walls already have coax that works, price a matching DVR kit and compare the picture, honestly, with a PoE quote. Do not pay twice because the first trip was nostalgic.
-3. If you cannot run cable and the Wi-Fi is decent, you do not have a no-Wi-Fi problem. You have a subscription and storage problem. Use the main no-subscription guide. If that purchase is several wireless cameras sharing one base, use [best wireless security camera system without monthly fee](/wireless-security-camera-system-without-monthly-fee/). If the camera is an Arlo, including a Go 2 that can use LTE, the hub path and the card path are in [Arlo without subscription](/arlo-without-subscription/).
+3. If you cannot run cable and the Wi-Fi is decent, you do not have a no-Wi-Fi problem. You have a subscription and storage problem. Use the main no-subscription guide. If that purchase is several wireless cameras sharing one base, use [best wireless security camera system without monthly fee](/wireless-security-camera-system-without-monthly-fee/). If the camera is an Arlo, including a Go 2 that can use LTE, the hub path and the card path are in [Arlo without subscription](/arlo-without-subscription/). If the camera is a Blink, it still needs 2.4 GHz Wi-Fi, and a no-plan clip depends on which Sync Module you have. That page is [Blink local storage without subscription](/blink-local-storage-without-subscription/).
 4. If you cannot run cable and there is no Wi-Fi, you are in cellular or you are in “do not put a camera there.” Price the data plan for a year next to the camera. Include it in the comparison, out loud.
 5. Test the outage you care about before you depend on it. Unplug the modem. Look at the local screen. Look at the phone and expect it to fail. Plug the modem back in.
 

@@ -5,7 +5,7 @@ title: Do You Need a Ring Subscription?
 description: "What Ring says you can do without a Protect plan, what video history costs, and the plan names and prices listed on ring.com when this draft was written."
 summary: "You can answer the door and watch live video without Ring Protect. You cannot save and replay motion video without a plan, according to Ring’s own support page. Here are the tiers, with the date attached."
 published: 2026-11-02
-updated: 2026-11-10
+updated: 2026-11-12
 primaryKeyword: do you need a Ring subscription
 kind: guide
 categories:
@@ -17,6 +17,7 @@ related:
   - best-video-doorbell-without-monthly-fee
   - wireless-security-camera-system-without-monthly-fee
   - arlo-without-subscription
+  - blink-local-storage-without-subscription
 heroAlt: "Illustration of a doorbell and a calendar page. Not a photo of a Ring device."
 comparisonCaption: "Ring’s public plan split as of the ring.com/plans page fetched for this draft on November 2, 2026. Re-check before you pay."
 takeaways:
@@ -172,7 +173,7 @@ Payment is card or the methods on ring.com. Ring says it does not take cash, che
 
 Buy the plan if you want Ring’s cloud timeline, the smart alerts on a supported device, or alarm monitoring you have actually read.
 
-Do not buy the plan if you wanted a file in the house and you are willing to change hardware. [Security cameras without a subscription](/security-cameras-without-subscription/) is the guide for that design. If the device is the doorbell, the storage paths other brands publish are in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/). If you want several wireless cameras recording to a base indoors, the candidate paths are in [best wireless security camera system without monthly fee](/wireless-security-camera-system-without-monthly-fee/). If the hardware is already Arlo, the no-plan sentence is different, and it includes a hub path Ring’s history article does not offer. That page is [Arlo without subscription](/arlo-without-subscription/). Outdoor placement and theft of the camera are in the [outdoor guide](/outdoor-security-cameras-without-subscription/). A local-storage doorbell from another brand can still be the wrong install for your chime and your transformer. The existence of another brand is not a recommendation of a specific model. The cards on this page are TODO on purpose.
+Do not buy the plan if you wanted a file in the house and you are willing to change hardware. [Security cameras without a subscription](/security-cameras-without-subscription/) is the guide for that design. If the device is the doorbell, the storage paths other brands publish are in [best video doorbell without monthly fee](/best-video-doorbell-without-monthly-fee/). If you want several wireless cameras recording to a base indoors, the candidate paths are in [best wireless security camera system without monthly fee](/wireless-security-camera-system-without-monthly-fee/). If the hardware is already Arlo, the no-plan sentence is different, and it includes a hub path Ring’s history article does not offer. That page is [Arlo without subscription](/arlo-without-subscription/). If the hardware is Blink, some Sync Modules store a clip with no plan and some do not. That page is [Blink local storage without subscription](/blink-local-storage-without-subscription/). Outdoor placement and theft of the camera are in the [outdoor guide](/outdoor-security-cameras-without-subscription/). A local-storage doorbell from another brand can still be the wrong install for your chime and your transformer. The existence of another brand is not a recommendation of a specific model. The cards on this page are TODO on purpose.
 
 Do not buy Pro for a face-recognition feature your city does not allow. Read the footnote.
 
@@ -180,6 +181,6 @@ Do not keep paying Solo out of inertia after you added two more cameras and thos
 
 ## How this page stays honest
 
-The numbers above are dated because undated prices become fiction. When you read this later, open ring.com/plans and the Protect support article and assume they win any conflict. The updated date on this guide should move when the text moves. If Andrew has not moved it, treat the dollars as historical. The November 10, 2026 edit adds the Arlo link. The Ring prices above are still the November 2, 2026 reading.
+The numbers above are dated because undated prices become fiction. When you read this later, open ring.com/plans and the Protect support article and assume they win any conflict. The updated date on this guide should move when the text moves. If Andrew has not moved it, treat the dollars as historical. The November 10, 2026 edit adds the Arlo link. The November 12, 2026 edit adds the Blink link. The Ring prices above are still the November 2, 2026 reading.
 
 There is no star rating for Ring Protect. A plan is a match to a habit, not a device that can be scored in a hallway. The Amazon buttons, if you use them, are affiliate links and the models are unverified. The [affiliate disclosure](/affiliate-disclosure/) is the short version. The FTC’s endorsement guides are the reason a site like this says “commission” in a sentence instead of hoping the reader notices a badge.
